@@ -1,7 +1,9 @@
 module.exports = {
   devServer: {
-    https: true, // 启用 HTTPS
+    // https: true, // 启用 HTTPS
     hot: true,
+    host: '0.0.0.0',
+    historyApiFallback: true,
     client: {
       webSocketURL: 'auto://0.0.0.0:8080/ws', // 自动选择 ws/wss
     },

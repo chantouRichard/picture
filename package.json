@@ -2,11 +2,14 @@
   "name": "picture",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --host 0.0.0.0",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "webpack serve --host 0.0.0.0 --allowed-hosts all"
+    "start": "vue-cli-service serve --host 0.0.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
